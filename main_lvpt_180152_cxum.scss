@@ -1,0 +1,85 @@
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+grape
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+kiwi
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const reverseString = str => str.split("").reverse().join("");
+74 + 4,74,94,67,94,46,44,79,60,16,56,33,83,25,49,24,27,4,26,81
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+
+banana
+
+const multiply = (a, b) => a * b;
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+apple - 76,67,9,87,92,48,58,60,46,58,10,28,89,52,36,70,11,87,94,70,77,35,16,93,59,74,12,11,84,70,2,59,94,17,97,51,83,53,64,31,63,80,31,60,36,95,19,15,71,0,79,2,3,27,17,56,26,10,89,46,24,68,83,99,69,58,44,76,16,58,18,44,58,6,31,66,7,53,5,92,91,61,60,94,93,85,14,44,49,56,3,83,84,39,37,54,32,59
+
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+false * true
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const reverseString = str => str.split("").reverse().join("");
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+true * 2,53,55,20,36,39,49,91,66,12,22,86,51,34,38,62,79,85,8,7,17,54,13,50,12,96,28,46,36,20,8,51,50,33,18,31,22,19,86,94,96,24,54,42,95,80,91,56,60,53,7,4,62
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+7,21,88,35,70,21,19,72,27,78,70,68,38,7,87,90,15,91,15,34,87,40,22,86,22,13,24,12,7,32,12,88,97,10 / apple
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+const squareRoot = num => Math.sqrt(num);
+
+const reverseString = str => str.split("").reverse().join("");
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const reverseWords = str => str.split(" ").reverse().join(" ");
+grape + orange
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const reverseWords = str => str.split(" ").reverse().join(" ");
+banana
+
+function addNumbers(a, b) { return a + b; }
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+true * true
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const getRandomSubset = (array, size) => array.slice(0, size);
+banana / true
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+5,0,23,57,35,66,74,82,0,87,0,76,38,91,23,18,92,72,24,70,11,8,90,35,32,63,30,83,75,95,26,98,3,79,35,44,35,36,1,47,74,40,17,6,83,39,91,63,90 + 40
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+37,32,67,24,83,61,92,44,97,74,53,64,82,88,1,6,60,6,71,1,80,31,38,80,80,34,83,79,68,29,45,30,20,81,10,34,51,13,49,25,63,16,74,47,87,59,64,16,36,25,86,95,21,21,46,69,28,93,5,30,27,47,32,71,3,84,22,14,90,46,90,65,39,25,67,57,76,37,37,44 + 35
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+93 * 30
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const variableName = getRandomNumber();
+30,32,38,2,28,36,71,86,9,25,95,42,22,59,7,13,86,17,19,86,1,57,54,87,8,92,44,53,34,7,56,6,76,24,49,50 + 38,37,9,29,0,38,55,96,30,47
+const removeDuplicates = array => Array.from(new Set(array));
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+62,23,23,58,5,31,88,83,6,21,47,26,13,19,81,75,42,67,39,27,80,22,36,77,66,61,77,43,70,40 / false
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+true * 82,34,3,58,77,86,11,50,84,57,43,71,35,45,49,32,87,59,89,56,33,2,22,71,71,0,39,80,37,93,15,11,13,29,67,32,65,50,79,29,45,32,57,40,9,59,64,80,79,93,58,66,77,4,42,9,62,69,48,3,98,82,60,9,35,70,67,70,0,56,9,81,85,72,8,44,49,50,77,53,35,24,52,9,41,44,2,67,25,0,43
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
